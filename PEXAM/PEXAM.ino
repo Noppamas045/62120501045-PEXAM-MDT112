@@ -43,6 +43,7 @@ void setup(){
     display.begin(0x3C);
     display.clearDisplay();
     display.display();
+
     
     display.setCursor(30,10);
     display.setTextColor(1);
@@ -52,6 +53,11 @@ void setup(){
       delay(1000);
       display.clearDisplay();
       display.display(); //5
+
+      delay(350);
+      tone(8,600);
+      delay(200);
+      noTone(8); //6
 
 
 
