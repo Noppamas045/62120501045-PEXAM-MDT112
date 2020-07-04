@@ -21,9 +21,17 @@ void setup(){
     Serial.println("Turn CCW");
     delay(2000);
     digitalWrite (M1A,0);
-    digitalWrite (M2A,0);
+    digitalWrite (M2A,0); //3
 
-    
+    analogWrite (ena,100);
+    digitalWrite (M1A,0);
+    digitalWrite (M2A,1);
+    Serial.println("Turn CW");
+    delay(2500);
+    digitalWrite (M1A,0);
+    digitalWrite (M2A,0); //4
+
+
 }
 
 void loop(){ 
